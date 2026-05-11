@@ -1,0 +1,29 @@
+{
+  "entry": [
+    {
+      "import": "./src/main.tsx",
+      "name": "index"
+    }
+  ],
+  "stats": true,
+  "output": {
+    "publicPath": "runtime",
+    "filename": "[name].[contenthash:8]",
+    "cssFilename": "[name].[contenthash:8]",
+    "chunkFilename": "async.[contenthash:8]"
+  },
+  "devServer": {
+    "hot": false
+  },
+  "nodePolyfill": true,
+  "module": {
+    "rules": {
+      "**/src/**/*.tsx": [
+        "yfd-air-component-tagger-webpack-loader"
+      ],
+      "**/src/**/*.jsx": [
+        "yfd-air-component-tagger-webpack-loader"
+      ]
+    }
+  }
+}
