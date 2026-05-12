@@ -1,5 +1,4 @@
 const path = require('path');
-const ComponentTaggerPlugin = require('@alipay/yfd-air-component-tagger-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
@@ -10,11 +9,18 @@ module.exports = {
   },
   devServer: {
     static: {
-      directory: path.join(__dirname, 'public')
+      directory: path.join(__dirname, '.')
     },
     port: 3006,
     allowedHosts: 'all',
-    hot: true
+    hot: true,
+    watchFiles: ['src/**/*'],
+    client: {
+      overlay: {
+        errors: true,
+        warnings: false
+      }
+    }
   },
   module: {
     rules: [
@@ -48,7 +54,9 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './index.html',
       inject: 'body'
-    }),
-    new ComponentTaggerPlugin(process.env)
-  ]
+    })
+  ],
+  watchOptions: {
+    ignored: /node_modules/
+  }
 };

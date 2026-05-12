@@ -7,8 +7,6 @@
     "build": "webpack --mode production"
   },
   "dependencies": {
-    "@alipay/muse-service": "^1.1.10",
-    "@alipay/yfd-supabase": "^1.0.6",
     "@hookform/resolvers": "^3.10.0",
     "@radix-ui/react-accordion": "^1.2.11",
     "@radix-ui/react-alert-dialog": "^1.1.14",
@@ -74,7 +72,6 @@
     "@types/uuid": "^9.0.8"
   },
   "devDependencies": {
-    "@alipay/yfd-air-component-tagger-plugin": "^1.1.6",
     "@babel/core": "^7.23.0",
     "@babel/preset-env": "^7.23.0",
     "@babel/preset-react": "^7.22.0",
@@ -92,8 +89,8 @@
     "eslint": "^9.32.0",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.20",
-    "html-webpack-plugin": "^5.5.3",
     "globals": "^15.15.0",
+    "html-webpack-plugin": "^5.5.3",
     "postcss": "^8.4.0",
     "tailwindcss": "^3.3.0",
     "typescript": "^5.2.0",
