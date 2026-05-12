@@ -167,7 +167,7 @@ const WinnersList = () => {
               {activePoolId === 'all' ? '总计' : '当前奖池'}产生{' '}
               {sortedWinners.length} 位幸运儿
             </span>
-            <span className="text-xs opacity-50">Muse Lottery System 2026</span>
+            <span className="text-xs opacity-50">Lottery System 2026</span>
           </div>
         </motion.div>
       </motion.div>

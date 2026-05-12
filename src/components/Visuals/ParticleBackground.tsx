@@ -62,7 +62,6 @@ const Cloud = ({ count = 4, radius = 20 }) => {
       { name: 'LUCKY' },
       { name: 'WINNER' },
       { name: 'FORTUNE' },
-      { name: 'MUSE' },
       { name: 'YEAR' },
       { name: 'OF' },
       { name: 'HORSE' },
